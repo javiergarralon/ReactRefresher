@@ -1,6 +1,7 @@
 import "./App.css";
 
-import ListaObjetivos from "./components/ListaObjetivos";
+import ListaObjetivos from "./components/ListaObjetivos/ListaObjetivos";
+import NewGoal from "./components/NuevoObjetivo/NuevoObjetivo";
 
 const App = () => {
   const objetivosCurso = [
@@ -9,9 +10,15 @@ const App = () => {
     { id: "oc3", text: "Ayudar a otros estudiantes en las PyR" },
   ];
 
+  const addNuevoObjetivoHandler = (nuevoObjetivo) => {
+    objetivosCurso.push(nuevoObjetivo);
+    console.log(objetivosCurso);
+  };
+
   return (
     <div className="objetivos-curso">
       <h2>Objetivos del Curso React</h2>
+      <NewGoal onAddObjetivo={addNuevoObjetivoHandler} />
       <ListaObjetivos objetivos={objetivosCurso} />
     </div>
   );
