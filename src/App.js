@@ -12,7 +12,10 @@ const App = () => {
   ]);
 
   const addNuevoObjetivoHandler = (nuevoObjetivo) => {
-    setObjetivoCurso(objetivosCurso.concat(nuevoObjetivo));
+    //setObjetivoCurso(objetivosCurso.concat(nuevoObjetivo));
+    setObjetivoCurso((prevObjetivosCursos) => {
+      return prevObjetivosCursos.concat(nuevoObjetivo)
+    });
   };
 
   return (
