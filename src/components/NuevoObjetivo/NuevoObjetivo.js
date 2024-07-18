@@ -9,7 +9,7 @@ const NewGoal = (props) => {
       id: Math.random().toString(),
       text: "Mi nuevo objetivo!",
     };
-    console.log(nuevoObjetivo)
+    console.log(nuevoObjetivo);
 
     props.onAddObjetivo(nuevoObjetivo);
   };
