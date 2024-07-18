@@ -1,0 +1,11 @@
+.lista-objetivos{
+    list-style-type: none;
+    margin: 2rem;
+    padding: 0;
+}
+
+.lista-objetivos li{
+    margin: 1rem 0;
+    border: 1px solid #aaa;
+    padding: 1rem;
+}

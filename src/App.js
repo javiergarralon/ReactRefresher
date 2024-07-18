@@ -1,10 +1,14 @@
-import './App.css';
+import "./App.css";
 
-function App() {
+import ListaObjetivos from "./components/ListaObjetivos";
+
+const App = () => {
   return (
-    //<h1>Test</h1> => React.createElement(h1, {title: 'This works!', 'Text'})
-    <h1>This is React!</h1>
+    <div className="objetivos-curso">
+      <h2>Objetivos del Curso React</h2>
+      <ListaObjetivos />
+    </div>
   );
-}
+};
 
 export default App;
